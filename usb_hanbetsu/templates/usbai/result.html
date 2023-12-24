@@ -1,0 +1,27 @@
+{% extends "usbai/base.html" %}
+{% load static %}
+{% block title %}Ur Name (Result){% endblock %}
+
+{% block content %}
+<div class="result">
+  <h4 class="mt-4 mb-5 boder-bottom">画像推定結果</h4>
+  <table class="table">
+      <p class="body-wrapper">ファイル名:{{photo_name}}</p>
+
+      <h2>画像ファイル<h2>
+      <img class="preview-img" src={{photo_data}}></img>
+
+      <p>規格名:{{predicted}}</p>
+      <p>推定確率:{{percentage}} %</p>
+
+      <p>このポートに刺さる端子</p>
+      <img class="preview-img" src="{% static 'img/' %}{{predicted}}.jpg"> </img>
+      <p><a href={{ result_url }} target="_blank" rel="noopener noreferrer">この端子のケーブル欲しい人はこちら！(Google検索結果)</a></p>
+      
+  </table>
+  <br>
+
+  <a href="{% url 'usbai:index' %}" class="btn btn-primary btn-lg btn-block">選択メニューに戻る</a>
+
+</div>
+{% endblock %}
