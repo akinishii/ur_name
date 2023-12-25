@@ -2,13 +2,13 @@
 CNNモデルでUSB差込口の規格を判定するDjango製Webアプリ。Tech-Baseインターンでの成果物。<br>
 とりあえずアップロードした程度のものです。
 
-#依存関係
+# 依存関係
 <li>django</li>
 <li>tensorflow (>2.0)</li>
 <li>Pillow</li>
 <li>numpy</li>
 
-#事前準備
+# 事前準備
 SECRET_KEYをur_name/usb_hanbetsu/usb_hanbetsu/local_setting/local_settings.pyに設定する
 ```
 SECRET_KEY = 'your_secret_key'
@@ -23,7 +23,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 '*u^6bvxcxz-uur&d3m+*48(4w6-gk_meygd8=6kwb+z9e21ry@' #SECRET_KEY
 >>> 
 ```
-#起動
+# 起動
 ur_name/usb_hanbetsuディレクトリに移動し以下を実行
 ```
 python3 manage.py runserver
