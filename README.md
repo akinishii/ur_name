@@ -40,10 +40,10 @@ Starting development server at http://127.0.0.1:8000/
 http://127.0.0.1:8000/usbai/
 ```
 
-#ToDo
+# ToDo
 <li>機械学習モデル実装コードと精度検証の結果公開</li>
 <li>ドキュメント(このページ)の整理・充実</li>
 <li>Webアプリの使い勝手向上</li>
 
-#参考
+# 参考
 SECRET_KEYの作成: https://blog.kyanny.me/entry/2021/01/27/033507
